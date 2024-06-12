@@ -3,9 +3,11 @@
 import os
 import logging
 from contextlib import contextmanager
+import requests
 import pytest
 from airflow.models import DagBag
-
+import pandas as pd
+print(pd.__version__)
 
 @contextmanager
 def suppress_logging(namespace):
